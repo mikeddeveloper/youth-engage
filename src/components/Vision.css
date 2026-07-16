@@ -22,8 +22,8 @@
   gap: 72px;
 }
 
-.vision__icon-wrap {
-  flex: 0 0 160px;
+.vision__photo-wrap {
+  flex: 0 0 220px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,8 +32,8 @@
 
 .vision__icon-ring {
   position: absolute;
-  width: 160px;
-  height: 160px;
+  width: 230px;
+  height: 230px;
   border-radius: 50%;
   border: 2px dashed rgba(107,76,154,0.25);
   animation: ring-spin 18s linear infinite;
@@ -44,20 +44,17 @@
   to   { transform: rotate(360deg); }
 }
 
-.vision__icon {
-  width: 120px;
-  height: 120px;
+.vision__photo {
+  width: 190px;
+  height: 190px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--purple) 0%, #8a6ab8 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  box-shadow: 0 12px 40px rgba(107,76,154,0.32);
+  object-fit: cover;
+  object-position: center top;
+  border: 3px solid rgba(107,76,154,0.3);
+  box-shadow: 0 12px 40px rgba(107,76,154,0.28);
   position: relative;
   z-index: 1;
 }
-.vision__icon svg { width: 52px; height: 52px; }
 
 .vision__content { flex: 1; min-width: 0; }
 
@@ -94,5 +91,6 @@
     text-align: center;
     gap: 44px;
   }
+  .vision__photo-wrap { flex: none; }
   .vision__tags { justify-content: center; }
 }

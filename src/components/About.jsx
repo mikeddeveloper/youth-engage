@@ -1,4 +1,5 @@
 import './About.css';
+import fela1Img from '../fela1.jpg';
 
 export default function About() {
   return (
@@ -9,8 +10,8 @@ export default function About() {
           <div className="about__glow" />
           <div className="about__circle about__circle--outer" />
           <div className="about__circle about__circle--mid" />
-          <div className="about__logo-wrap">
-            <img src="/images/yep_logo.png" alt="" width="160" height="160" />
+          <div className="about__photo-wrap">
+            <img src={fela1Img} alt="" loading="lazy" />
           </div>
           <span className="about__dot about__dot--yellow" />
           <span className="about__dot about__dot--purple" />

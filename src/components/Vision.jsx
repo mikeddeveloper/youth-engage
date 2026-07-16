@@ -1,13 +1,5 @@
 import './Vision.css';
-
-function ArrowUpIcon() {
-  return (
-    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <path d="M32 48V16M20 28l12-12 12 12" stroke="currentColor" strokeWidth="3"
-        strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  );
-}
+import ye2Img from '../ye.2.png';
 
 export default function Vision() {
   return (
@@ -15,11 +7,9 @@ export default function Vision() {
       <div className="vision__bg-circle" aria-hidden="true" />
 
       <div className="container vision__inner">
-        <div className="vision__icon-wrap" aria-hidden="true" data-aos="zoom-in" data-aos-duration="800">
+        <div className="vision__photo-wrap" aria-hidden="true" data-aos="zoom-in" data-aos-duration="800">
           <div className="vision__icon-ring" />
-          <div className="vision__icon">
-            <ArrowUpIcon />
-          </div>
+          <img src={ye2Img} alt="" className="vision__photo" loading="lazy" />
         </div>
 
         <div className="vision__content">
