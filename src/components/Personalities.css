@@ -1,0 +1,111 @@
+.personalities {
+  background: var(--yellow-tint);
+  padding: 110px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.personalities__bg-dot {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.personalities__bg-dot--1 {
+  width: 300px; height: 300px;
+  background: rgba(242,194,48,0.15);
+  right: -80px; top: -80px;
+}
+.personalities__bg-dot--2 {
+  width: 200px; height: 200px;
+  background: rgba(242,194,48,0.1);
+  left: -60px; bottom: -40px;
+}
+
+.personalities__header {
+  text-align: center;
+  margin-bottom: 56px;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.personalities__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 24px;
+}
+
+/* ── Card ── */
+.person-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(30,30,36,0.06);
+  transition: transform 0.28s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              box-shadow 0.28s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+}
+.person-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--yellow), #d4a800);
+}
+.person-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.person-card__img-wrap {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background: linear-gradient(135deg, #FEF3C0 0%, var(--yellow-tint) 100%);
+  overflow: hidden;
+}
+.person-card__img-wrap img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  position: relative;
+  z-index: 1;
+}
+.person-card:hover .person-card__img-wrap img {
+  transform: scale(1.06);
+}
+
+.person-card__placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #9a7a00;
+  background: linear-gradient(135deg, rgba(242,194,48,0.25) 0%, rgba(242,194,48,0.1) 100%);
+  z-index: 0;
+}
+
+.person-card__body {
+  padding: 20px 20px 22px;
+}
+.person-card__name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--charcoal);
+  margin-bottom: 5px;
+}
+.person-card__caption {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+  .personalities__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
