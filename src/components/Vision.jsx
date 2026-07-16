@@ -1,5 +1,5 @@
 import './Vision.css';
-import ye2Img from '../ye.2.png';
+import ye2Img from '../images/ye2.png';
 
 export default function Vision() {
   return (

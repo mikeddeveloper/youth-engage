@@ -53,10 +53,11 @@ export default function Gallery() {
             Gallery
           </span>
           <h2 className="section-heading">
-            Moments of <span style={{ color: 'var(--purple)' }}>Impact</span>
+            In the <span style={{ color: 'var(--purple)' }}>Frame</span>
           </h2>
           <p className="section-body">
-            A glimpse into the events, conversations, and connections that define Youth Engage.
+            A visual archive of the conversations, sessions, and connections that define
+            who we are.
           </p>
         </div>
 

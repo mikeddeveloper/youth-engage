@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 import './Hero.css';
-import missionImg from '../mission.png';
-import ye4Img     from '../ye.4.png';
-import fela1Img   from '../fela1.jpg';
-import fela7Img   from '../fela7.jpg';
+import missionImg from '../images/mission.png';
+import ye4Img     from '../images/ye4.png';
+import fela1Img   from '../images/fela1.jpg';
+import fela7Img   from '../images/fela7.jpg';
 
 const SLIDES = [
   { src: missionImg, alt: '' },

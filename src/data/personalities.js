@@ -1,5 +1,5 @@
-import oluImg from '../olu.jpg';
-import fukImg from '../fuk.jpg';
+import oluImg from '../images/olu.jpg';
+import fukImg from '../images/fuk.jpg';
 
 const personalities = [
   {

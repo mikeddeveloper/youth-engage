@@ -1,5 +1,5 @@
 import './About.css';
-import fela1Img from '../fela1.jpg';
+import fela1Img from '../images/fela1.jpg';
 
 export default function About() {
   return (

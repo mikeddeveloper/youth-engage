@@ -1,23 +1,23 @@
 const testimonials = [
   {
-    text: 'Youth Engage changed my life. The mentorship and opportunities helped me discover who I am and what I can achieve.',
-    name: 'Obafemi Obasanjo',
-    title: 'Youth Engage Participant',
+    text: 'Youth Engage changed my perspective entirely. Sitting in the same room as leaders who started with nothing and built empires — that was the push I needed.',
+    name: 'Emeka Okafor',
+    title: 'Youth Engage Participant, Lagos',
   },
   {
-    text: 'Being a part of Youth Engage opened doors for me. I\'ve grown in confidence, skills, and leadership.',
-    name: 'Funke Osibodu',
-    title: 'Youth Engage Participant',
+    text: 'I came in unsure of my path. I left with a roadmap. The conversations on this programme are unlike anything I have experienced.',
+    name: 'Ngozi Adeyemi',
+    title: 'University Student, Ibadan',
   },
   {
-    text: 'The stories shared by accomplished citizens on Youth Engage inspired me to keep pushing despite every obstacle.',
+    text: 'The stories shared by accomplished citizens on Youth Engage inspired me to keep pushing despite every obstacle on my journey.',
     name: 'Chidi Nwosu',
-    title: 'Young Professional, Lagos',
+    title: 'Young Professional, Abuja',
   },
   {
-    text: 'Youth Engage gave me a platform to see what is possible. Every young Nigerian should be part of this movement.',
+    text: 'Every young Nigerian should be part of this movement. Youth Engage gave me the confidence to believe my dreams are worth chasing.',
     name: 'Aisha Bello',
-    title: 'University Student, Abuja',
+    title: 'Entrepreneur, Port Harcourt',
   },
 ];
 
