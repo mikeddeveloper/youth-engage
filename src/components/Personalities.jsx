@@ -39,8 +39,8 @@ function PersonCard({ name, caption, image }) {
         <img
           src={image}
           alt={name}
-          loading="lazy"
-          onError={e => { e.currentTarget.style.display = 'none'; }}
+          loading="eager"
+          decoding="async"
         />
         <div className="person-card__placeholder" aria-hidden="true">{initials}</div>
       </div>
