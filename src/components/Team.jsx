@@ -1,22 +1,18 @@
 import team from '../data/team';
 import './Team.css';
 
-function TeamCard({ name, role, image }) {
-  const initials = name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
+function TeamCard({ name, number }) {
   return (
     <article className="team-card">
-      <div className="team-card__img-wrap">
-        <img
-          src={image}
-          alt={name}
-          loading="lazy"
-          onError={e => { e.currentTarget.style.display = 'none'; }}
-        />
-        <div className="team-card__placeholder" aria-hidden="true">{initials}</div>
+      <div className="team-card__lanyard" aria-hidden="true">
+        <span />
+        <span />
       </div>
-      <div className="team-card__body">
+      <div className="team-card__clip" aria-hidden="true" />
+      <div className="team-card__badge">
+        <span className="team-card__eyebrow">YEP Team</span>
         <h3 className="team-card__name">{name}</h3>
-        <p className="team-card__role">{role}</p>
+        <span className="team-card__number">{String(number).padStart(2, '0')}</span>
       </div>
     </article>
   );
@@ -42,17 +38,20 @@ export default function Team() {
           </p>
         </div>
 
-        <div className="team__grid">
+        <div className="team__rail" aria-hidden="true"><span /><span /></div>
+        <div className="team__scroller" aria-label="Our team members">
           {team.map((m, i) => (
             <div
+              className="team__card-slot"
               key={m.id}
               data-aos="fade-up"
               data-aos-delay={Math.min(i * 80, 320)}
             >
-              <TeamCard {...m} />
+              <TeamCard {...m} number={i + 1} />
             </div>
           ))}
         </div>
+        <p className="team__scroll-hint">Scroll sideways to meet the team <span aria-hidden="true">→</span></p>
       </div>
     </section>
   );

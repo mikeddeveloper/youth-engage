@@ -10,8 +10,8 @@ const personalities = [
   },
   {
     id: 2,
-    name: 'Funke Osibudu',
-    caption: 'Media Personality & Broadcaster',
+    name: 'Funke Osibodu',
+    caption: 'Banker, Investment Strategist and Speaker',
     image: fukImg,
   },
 ];

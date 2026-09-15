@@ -1,27 +1,27 @@
 const team = [
   {
     id: 1,
-    name: 'Team Member Name',
-    role: 'Executive Producer',
-    image: '/images/team/member-1.jpg',
+    name: 'Team Member 01',
   },
   {
     id: 2,
-    name: 'Team Member Name',
-    role: 'Creative Director',
-    image: '/images/team/member-2.jpg',
+    name: 'Team Member 02',
   },
   {
     id: 3,
-    name: 'Team Member Name',
-    role: 'Programme Coordinator',
-    image: '/images/team/member-3.jpg',
+    name: 'Team Member 03',
   },
   {
     id: 4,
-    name: 'Team Member Name',
-    role: 'Media & Communications Lead',
-    image: '/images/team/member-4.jpg',
+    name: 'Team Member 04',
+  },
+  {
+    id: 5,
+    name: 'Team Member 05',
+  },
+  {
+    id: 6,
+    name: 'Team Member 06',
   },
 ];
 
